@@ -1,0 +1,10 @@
+FROM pizzafactory0contorno/piatto:alpine
+LABEL MAINTAINER="Masaki Muranaka <monaka@pizzafactory.jp>"
+
+USER root
+
+RUN apk add --no-cache \
+      ruby ruby-dev ruby-rake \
+      gperf build-base bison flex
+
+USER user
