@@ -1,4 +1,5 @@
-FROM pizzafactory0contorno/piatto:alpine
+ARG IMAGE_TAG
+FROM pizzafactory0contorno/piatto:${IMAGE_TAG}
 LABEL MAINTAINER="Masaki Muranaka <monaka@pizzafactory.jp>"
 
 USER root
